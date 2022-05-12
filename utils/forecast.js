@@ -11,7 +11,7 @@ const forecast=(latitude,longitude,callback)=>{
         }
         else{
             let data=response.body.current;
-            let forecastData=`its ${data.temperature} temperature and feels like ${data.feelslike}`
+            let forecastData=`its ${data.temperature} temperature and feels like ${data.feelslike} and the humidity is ${data.humidity}`
             let atmosphere={
                 forecast:forecastData,
                 latitude,
